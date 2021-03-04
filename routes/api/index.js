@@ -1,5 +1,5 @@
 const router = require('express').Router();
-
+const { User, Post } = require('../../models');
 const userRoutes = require('./user-routes.js');
 // create associations
 User.hasMany(Post, {
